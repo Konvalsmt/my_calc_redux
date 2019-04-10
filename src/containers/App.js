@@ -13,7 +13,7 @@ class App extends Component {
    let  { ClearDat } = this.props.ClearActions;
   
 return <div>
-    <input type="text" defaultValue={this.props.result}></input>
+    <input type="text" Value={this.props.result} readonly></input>
 <Board  setDat={setDat} setRes={setResult} ClearDat={ClearDat} />
 </div>
 }
