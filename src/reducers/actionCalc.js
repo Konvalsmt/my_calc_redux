@@ -5,6 +5,7 @@ export const SET_MULT = 'SET_MULT'
 export const SET_EQUAL = 'SET_EQUAL'
 export const SET_RESULT = 'SET_RESULT'
 export const SET_DAT= 'SET_DAT'
+export const SET_CLEAR= 'SET_CLEAR'
 
 const initialState = {
             result:"0"
@@ -48,8 +49,10 @@ return s.toString()
   
         case SET_RESULT :
         return {...state, result:getResult(state.result)}  
-        
 
+        case SET_CLEAR :
+        return {...state, result:state.result.substr(0, state.result.length - 1)}   
+        
 
     default:
     return state;

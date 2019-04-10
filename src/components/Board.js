@@ -36,7 +36,7 @@ class Board extends React.Component {
           </div>
           <div className="board-row">
             {this.renderSquare(0,this.props.setDat)}
-            {this.renderSquare("<")}
+            {this.renderSquare("<",this.props.ClearDat)}
             {this.renderSquare("=",this.props.setRes)}
             {this.renderSquare("/",this.props.setDat)}
           </div>
