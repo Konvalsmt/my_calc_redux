@@ -1,36 +1,12 @@
-import React, { Component } from 'react'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import React,{Component} from 'react'
 import Board from '../components/Board'
-import * as pageActions from '../actions/PageActions'
-import * as Resultactions from '../actions/Resultactions'
-import * as ClearActions from '../actions/ClearActions'
 
 class App extends Component {
     render() {
-     let  { setDat } = this.props.pageActions;
-   let  { setResult } = this.props.ResultActions;
-   let  { ClearDat } = this.props.ClearActions;
-  
-return <div>
-    <input type="text" Value={this.props.result} readonly></input>
-<Board  setDat={setDat} setRes={setResult} ClearDat={ClearDat} />
-</div>
-}
+    return  <div>
+            <Board  />
+            </div>
+    }
 }
 
-function mapStateToProps(state) {
-return {
-result:state.result
-}
-}
-
-function mapDispatchToProps(dispatch) {
-return {
-pageActions: bindActionCreators(pageActions, dispatch),
-ResultActions: bindActionCreators(Resultactions, dispatch),
-ClearActions: bindActionCreators(ClearActions, dispatch),
-}
-}
-
-export default connect(mapStateToProps,mapDispatchToProps)(App)
+export default App
