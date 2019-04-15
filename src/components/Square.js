@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '@material/react-button';
+import './button.css'
 
  class Square extends React.Component {
   onDatBtnClick() {
@@ -6,16 +8,15 @@ import React from 'react'
    // if (this.props)
    this.props.setDat(this.props.value);
     }
- 
+  
 
     render() {
 
-             //let dat={this.props.value}
-      return (
-        <button className="square" onClick={this.onDatBtnClick.bind(this)}>
-          {this.props.value}
-        </button>
-      );
+         return (
+        <button  onClick={this.onDatBtnClick.bind(this)} className={this.props.className}>
+              {this.props.value}
+                  </button>
+          );
     }
    }
    export default Square

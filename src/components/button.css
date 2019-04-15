@@ -1,0 +1,20 @@
+.but-class1 {
+    background-color: rgb(217, 205, 228);
+    height: 38px;
+    width: 60px;
+    display: inline-block;
+    /*flex-direction: column;*/
+    color: black;
+    margin-top: 0px;
+    border-radius: 8px;
+  }
+  .but-class2 {
+    background-color: red;
+           height: 38px;
+        width: 60px;
+        display: inline-block;
+        /*flex-direction: column;*/
+        color: black;
+        margin-top: 0px;
+        border-radius: 8px;
+      }

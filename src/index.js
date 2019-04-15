@@ -8,7 +8,7 @@ import { createStore, applyMiddleware } from 'redux'
 import Result from './reducers/actionCalc'
 //import { ping } from './enhancers/Ping' // <!-- подключаем наш enhancer
 import createLogger from 'redux-logger'
-
+//import  './index.css'
 const initialState = {
      result:""
         }

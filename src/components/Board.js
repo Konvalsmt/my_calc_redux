@@ -5,11 +5,12 @@ import { connect } from 'react-redux'
 import * as pageActions from '../actions/PageActions'
 import * as Resultactions from '../actions/Resultactions'
 import * as ClearActions from '../actions/ClearActions'
+//import '@material/react-button/dist/button.css';
 
 class Board extends React.Component {
 
-    renderSquare(i,click) {
-      return <Square value={i} setDat={click} />;
+    renderSquare(i,click,butClassName) {
+      return <Square value={i} setDat={click} className={butClassName} />;
     }
 
         
@@ -21,31 +22,31 @@ class Board extends React.Component {
 
       return (
         <div>
-          <input type="text" value={this.props.result} readonly></input>
+          <input type="text" classname='mdc-textfield__input' placeholder="Результат" value={this.props.result} readonly></input>
           <div className="status">{status}</div>
           <div className="board-row">
-            {this.renderSquare(1,setDat)}
-            {this.renderSquare(2,setDat)}
-            {this.renderSquare(3,setDat)}
-            {this.renderSquare("+",setDat)}
+            {this.renderSquare(1,setDat,"but-class1")}
+            {this.renderSquare(2,setDat,"but-class1")}
+            {this.renderSquare(3,setDat,"but-class1")}
+            {this.renderSquare("+",setDat,"mdc-button mdc-button--primary mdc-button--raised")}
           </div>
           <div className="board-row">
-            {this.renderSquare(4,setDat)}
-            {this.renderSquare(5,setDat)}
-            {this.renderSquare(6,setDat)}
-            {this.renderSquare("-",setDat)}
+            {this.renderSquare(4,setDat,"but-class1")}
+            {this.renderSquare(5,setDat,"but-class1")}
+            {this.renderSquare(6,setDat,"but-class1")}
+            {this.renderSquare("-",setDat,"mdc-button mdc-button--primary mdc-button--raised")}
           </div>
           <div className="board-row">
-            {this.renderSquare(7,setDat)}
-            {this.renderSquare(8,setDat)}
-            {this.renderSquare(9,setDat)}
-            {this.renderSquare("*",setDat)}
+            {this.renderSquare(7,setDat,"but-class1")}
+            {this.renderSquare(8,setDat,"but-class1")}
+            {this.renderSquare(9,setDat,"but-class1")}
+            {this.renderSquare("*",setDat,"mdc-button mdc-button--primary mdc-button--raised")}
           </div>
           <div className="board-row">
-            {this.renderSquare(0,setDat)}
-            {this.renderSquare("<",ClearDat)}
-            {this.renderSquare("=",setResult)}
-            {this.renderSquare("/",setDat)}
+            {this.renderSquare(0,setDat,"but-class1")}
+            {this.renderSquare("<",ClearDat,"but-class2")}
+            {this.renderSquare("=",setResult,"but-class2")}
+            {this.renderSquare("/",setDat,"mdc-button mdc-button--primary mdc-button--raised")}
           </div>
 
         </div>
