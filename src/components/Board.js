@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import * as pageActions from '../actions/PageActions'
 import * as Resultactions from '../actions/Resultactions'
 import * as ClearActions from '../actions/ClearActions'
-//import '@material/react-button/dist/button.css';
+import './Board.css';
 
 class Board extends React.Component {
 
@@ -22,7 +22,7 @@ class Board extends React.Component {
 
       return (
         <div>
-          <input type="text" classname='mdc-textfield__input' placeholder="Результат" value={this.props.result} readonly></input>
+          <input type="text" className='result-cls' placeholder="Результат" value={this.props.result} readonly></input>
           <div className="status">{status}</div>
           <div className="board-row">
             {this.renderSquare(1,setDat,"but-class1")}

@@ -1,0 +1,12 @@
+.result-cls
+{
+background-color: rgb(177, 163, 163);
+height: 38px;
+ width: 245px;
+ display: inline-block;
+ /*flex-direction: column;*/
+ color: rgb(238, 232, 232);
+ margin-top: 0px;
+ border-radius: 8px;
+
+}
