@@ -21,7 +21,7 @@ class Board extends React.Component {
       let  { ClearDat } = this.props.ClearActions; 
 
       return (
-        <div>
+        <div className='Board-cls'>
           <input type="text" className='result-cls' placeholder="Результат" value={this.props.result} readonly></input>
           <div className="status">{status}</div>
           <div className="board-row">

@@ -1,0 +1,10 @@
+.Calc-cls{
+    display:flex;
+    align-items:center;
+    
+    margin-left: 35%;
+    margin-top: 50px;
+}
+.status{
+    font-size:10px;
+}

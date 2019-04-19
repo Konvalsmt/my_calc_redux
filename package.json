@@ -1,7 +1,7 @@
 {
   "name": "my-redux",
   "version": "0.1.0",
-  "homepage": "http://Konvalsmt.github.io/my_calc_redux",
+  "homepage": "http://Konvalsmt.github.io",
   "private": true,
   "dependencies": {
     "@material/react-button": "^0.11.0",
